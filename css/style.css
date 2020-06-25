@@ -319,19 +319,25 @@ body {
   .accounts__menu {
     position: absolute;
     width: 300px;
-    height: 467px;
+    height: 0;
     left: -13px;
     display: block;
     top: 201px;
     z-index: 0;
     background: linear-gradient(211.12deg, #0FA9FF -26%, #27D0D0 106.02%);
     border-radius: 20px; }
+    .accounts__menu-current {
+      height: 467px;
+      opacity: 1;
+      visibility: visible; }
     .accounts__menu-2 {
       position: absolute;
       width: 300px !important;
       height: 856px;
       left: -13px;
       top: 201px;
+      visibility: hidden;
+      opacity: 0;
       background: #FFFFFF;
       border-radius: 20px;
       z-index: -1;
