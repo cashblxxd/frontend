@@ -43,8 +43,12 @@
         </div>
     </div>
     {% for i in range(1, accounts|length + 1) %}
-    {% if i == cur_pos %}
-        <div class="accounts__menu" id="account-{{ i }}">
+
+        <div class="accounts__menu
+        {% if i == cur_pos %}
+            accounts__menu-current
+        {% endif %}
+        " id="account-{{ i }}">
             <ul class="accounts__menu-list">
             <h1 class="accounts__menu-heading" id="account-{{ i }}-close"><i class="fas fa-user-minus"></i>{{ accounts[i - 1] }}</h1>
                 <a href="#" class="accounts__menu-item accounts__menu-item-active"id="current-page">
@@ -93,7 +97,7 @@
                 </a>
             </ul>
         </div>
-        {% endif %}
+        
     {% endfor %}
 
     
