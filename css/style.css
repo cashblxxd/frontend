@@ -328,8 +328,8 @@ body {
     border-radius: 20px; }
     .accounts__menu-current {
       height: 467px;
-      opacity: 1;
-      visibility: visible; }
+      opacity: 0;
+      visibility: hidden; }
     .accounts__menu-2 {
       position: absolute;
       width: 300px !important;
