@@ -64,24 +64,6 @@ $(".accounts__header-search__input").on('change', 'input', function() {
 
 })
 
-$(".accounts__menu-3").hover(function(){
-    
-    $(".accounts__menu-2").css({
-        "visibility":"visible",
-      }).animate({
-        "width":"202px",
-        "opacity": "1"
-    },600,'easeInOutQuint')
-
-  $(".accounts__menu-3").delay(100).queue(function (next) { 
-    $(this).css({
-        'visibility':'hidden',
-        'opacity':'0'
-    })
-    next(); 
-  });
-})
-
 
 
 
@@ -254,23 +236,3 @@ $(".accounts__menu-3").hover(function(){
 
 });
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
