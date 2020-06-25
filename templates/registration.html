@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вход</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    
+    <div class="alert">
+
+        <h1 class="alert__heading">Этот логин уже занят</h1>
+
+    </div>
+
+    <div class="authorization">
+        <h1 class="authorization__heading">Новый пользователь</h1>
+        <form action="" method="post">
+
+        <div class="authorization__input-box">
+            <input type="email" name="" id="email" class="authorization__input" placeholder="Почта">
+            <label for="email"id="email-feedback"class="authorization__label"></label>
+        </div>
+
+        <div class="authorization__input-box">
+            <input type="password" name="" id="password" class="authorization__input" placeholder="Пароль">
+            <label for="password"id="password-feedback"class="authorization__label"></label>
+        </div>
+
+        <div class="authorization__input-box">
+            <input type="password" name="" id="repeatpassword" class="authorization__input" placeholder="Пароль ещё раз">
+            <label for="repeatpassword"id="repeatpassword-feedback"class="authorization__label"></label>
+        </div>
+
+
+
+            <div class="authorization__checked-box">
+            <input type="checkbox" id="checkbox" class="authorization__checked" name=""><label class="authorization__checked-label" for="checkbox"> <p class="authorization__text">Я согласен с <a class="authorization__link" href="">правилами сервиса</a> </label> </p>
+        </div>
+            <button id="regButton" disabled name="" class="authorization__button authorization__button-2 submit-button" >Регистрация</button>
+       
+         <!-- </form> -->
+        <a href="" class="authorization__link authorization__link-2">Вход</a>
+    </div>
+
+<div class="success" id="successScreen">
+    <div class="success__box">
+    <p class="success__text">
+        Письмо для активации аккаунта отправлено на почту
+    </p>
+</div>
+    <button  class="success__button ok-button">Ок</button>
+</div>
+
+
+</body>
+</html>
